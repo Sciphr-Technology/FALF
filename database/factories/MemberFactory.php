@@ -2,18 +2,22 @@
 
 namespace Database\Factories;
 
-use App\Models\Member;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Member>
+ * MemberFactory class.
+ *
+ * This class is responsible for generating fake data for the Member model.
+ * It extends the Factory class provided by Laravel.
  */
 class MemberFactory extends Factory
 {
     /**
      * Define the model's default state.
      *
-     * @return array<string, mixed>
+     * This method returns an array of attributes with fake data for the Member model.
+     *
+     * @return array
      */
     public function definition(): array
     {

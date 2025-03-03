@@ -7,19 +7,26 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
+ * UserFactory class.
+ *
+ * This class is responsible for generating fake data for the User model.
+ * It extends the Factory class provided by Laravel.
  */
 class UserFactory extends Factory
 {
     /**
-     * The current password being used by the factory.
+     * The password to be used for the User model.
+     *
+     * @var string|null
      */
     protected static ?string $password;
 
     /**
      * Define the model's default state.
      *
-     * @return array<string, mixed>
+     * This method returns an array of attributes with fake data for the User model.
+     *
+     * @return array
      */
     public function definition(): array
     {
@@ -33,11 +40,15 @@ class UserFactory extends Factory
     }
 
     /**
-     * Indicate that the model's email address should be unverified.
+     * Indicate that the user's email address should be unverified.
+     *
+     * This method sets the email_verified_at attribute to null.
+     *
+     * @return static
      */
     public function unverified(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn(array $attributes) => [
             'email_verified_at' => null,
         ]);
     }

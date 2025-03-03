@@ -5,14 +5,19 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Policy>
+ * PolicyFactory class.
+ *
+ * This class is responsible for generating fake data for the Policy model.
+ * It extends the Factory class provided by Laravel.
  */
 class PolicyFactory extends Factory
 {
     /**
      * Define the model's default state.
      *
-     * @return array<string, mixed>
+     * This method returns an array of attributes with fake data for the Policy model.
+     *
+     * @return array
      */
     public function definition(): array
     {
