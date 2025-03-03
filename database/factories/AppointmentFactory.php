@@ -18,6 +18,7 @@ class AppointmentFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
+            'phone' => $this->faker->e164PhoneNumber(),
             'appointment_date' => $this->faker->date(),
             'appointment_time' => $this->faker->time(),
         ];

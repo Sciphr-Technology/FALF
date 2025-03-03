@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
             $table->string('name', 60)->index();
+            $table->string('phone', 20)->index();
             $table->date('appointment_date')->index();
             $table->time('appointment_time')->index();
             $table->timestamps();

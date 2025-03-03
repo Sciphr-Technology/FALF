@@ -2,11 +2,11 @@
 
 namespace Database\Factories;
 
-use App\Models\Memebr;
+use App\Models\Member;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Memebr>
+ * @extends Factory<Member>
  */
 class MemberFactory extends Factory
 {
